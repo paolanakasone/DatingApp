@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NewFolder1\**" />
+    <Compile Remove="NewFolder2\**" />
+    <Content Remove="NewFolder1\**" />
+    <Content Remove="NewFolder2\**" />
+    <EmbeddedResource Remove="NewFolder1\**" />
+    <EmbeddedResource Remove="NewFolder2\**" />
+    <None Remove="NewFolder1\**" />
+    <None Remove="NewFolder2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.7">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
