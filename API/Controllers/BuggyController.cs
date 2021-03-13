@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 using API.Data;
 using API.Entities;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace API.Controllers
 {
@@ -43,8 +40,10 @@ namespace API.Controllers
 
                 var thingToReturn = thing.ToString();
 
-                return thingToReturn;            
+                return thingToReturn;
+
         }
+
 
         [HttpGet("bad-request")]
         public ActionResult<string> GetBadRequest()
