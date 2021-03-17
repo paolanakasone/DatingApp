@@ -6,6 +6,8 @@ namespace API.Entities
 {
     public class AppUser
     {
+        internal object photos;
+
         public int Id { get; set; }
 
         public string UserName { get; set; }
@@ -36,10 +38,10 @@ namespace API.Entities
 
         public ICollection<Photo> Photos { get; set; }
 
-        public int GetAge()
-        {
-            return DateOfBirth.CalculateAge();
-        }
+     //   public int GetAge()
+     //   {
+     //       return DateOfBirth.CalculateAge();
+     //   }
 
     }
 }
