@@ -5,12 +5,12 @@ export interface Member {
     username: string;
     photoUrl: string;
     age: number;
-    knowAs?: any;
+    knownAs: string;
     created: Date;
     lastActive: Date;
     gender: string;
     introduction: string;
-    lookigFor?: any;
+    lookingFor: string;
     interests: string;
     city: string;
     country: string;
